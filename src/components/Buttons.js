@@ -12,6 +12,20 @@ const Button = styled.button`
     min-width: 100px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    &:hover {
+        background-color: ${defaultTheme.primaryColorHover};
+        color: ${defaultTheme.textColorOnPrimary};
+    }
+    &:focus {
+       outline: 1px solid ${defaultTheme.primaryColorActive};
+       outline-offset: 2px;
+    }
+    &:active {
+        background-color: ${defaultTheme.primaryColorActive};
+        border-color: ${defaultTheme.primaryColorActive};
+        color: ${defaultTheme.textColorOnPrimary};
+    }
 `
 
 
@@ -21,6 +35,11 @@ export const PrimaryButton = styled(Button)`
     background: ${defaultTheme.primaryColor};
     color: white;
     border: 1px solid transparent;
+     &:disabled {
+        background-color: ${defaultTheme.disabled};
+        color: ${defaultTheme.textColorInverted};
+        cursor: not-allowed;
+     }
 `;
 
 
@@ -30,6 +49,11 @@ export const SecondaryButton = styled(Button)`
     background: none;
     color: ${defaultTheme.primaryColor};
     border: 1px solid transparent;
+      &:disabled {
+        background: none;
+        color: ${defaultTheme.disabled};
+        cursor: not-allowed;
+     }
 `;
 
 export const TernaryButton = styled(Button)`
@@ -37,4 +61,10 @@ export const TernaryButton = styled(Button)`
     background: none;
     color: ${defaultTheme.primaryColor};
     border: 1px solid ${defaultTheme.primaryColor};
+     &:disabled {
+        background: none;
+        border: 1px solid ${defaultTheme.disabled};
+        color: ${defaultTheme.disabled};
+        cursor: not-allowed;
+     }
 `;

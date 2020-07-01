@@ -8,6 +8,8 @@ export const defaultTheme = {
     textColorOnPrimary: neutral[100],
     textColor: neutral[500],
     textColorInverted: neutral[100],
-    primaryFont: primaryFont
+    primaryFont: primaryFont,
+    disabled: neutral[300],
+    textOnDisabled: neutral[300]
 }
 
