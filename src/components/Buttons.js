@@ -1,9 +1,21 @@
 import styled from 'styled-components'
 import { defaultTheme, typeScale } from "../utils";
-
+import { applyStyleModifiers } from 'styled-components-modifiers'
 
 // Figma assets
 // https://www.figma.com/file/ehCOKzpFwHb5jQvH74MOxi/Untitled?node-id=6%3A240
+
+const BUTTON_MODIFIERS = {
+    small: () => `
+        font-size: ${typeScale.helperText};
+        padding: 8px;
+    `,
+    large: () => `
+        font-size: ${typeScale.h5};
+        padding: 16px 24px;
+    `
+}
+
 
 const Button = styled.button`
     font-size: ${typeScale.paragraph};
@@ -40,6 +52,9 @@ export const PrimaryButton = styled(Button)`
         color: ${defaultTheme.textColorInverted};
         cursor: not-allowed;
      }
+     
+     ${applyStyleModifiers(BUTTON_MODIFIERS)}
+     
 `;
 
 
@@ -54,6 +69,8 @@ export const SecondaryButton = styled(Button)`
         color: ${defaultTheme.disabled};
         cursor: not-allowed;
      }
+     
+     ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export const TernaryButton = styled(Button)`
@@ -67,4 +84,6 @@ export const TernaryButton = styled(Button)`
         color: ${defaultTheme.disabled};
         cursor: not-allowed;
      }
+     
+     ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
