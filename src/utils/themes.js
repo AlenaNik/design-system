@@ -1,7 +1,7 @@
 import { blue, neutral, yellow, red, green } from './colors'
 import { primaryFont } from "./typography";
 
-export const props = {
+export const defaultTheme = {
     primaryColor: blue[300],
     primaryColorHover: blue[200],
     primaryColorActive: blue[100],
