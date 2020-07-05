@@ -5,6 +5,7 @@ import { PrimaryButton } from './components/Buttons'
 import { SecondaryButton } from './components/Buttons'
 import { TertiaryButton } from './components/Buttons'
 import { GlobalStyle, darkTheme, props } from './utils'
+import { SignUpModal } from "./components";
 
 const App = () => {
         const [useDarkTheme, setUseDarkTheme] = useState(false)
@@ -47,6 +48,7 @@ const App = () => {
                             <SecondaryButton modifiers={["large", "warning"]}>Secondary button</SecondaryButton>
                             <TertiaryButton>Ternary button</TertiaryButton>
                     </div>
+                        <SignUpModal />
                     <GlobalStyle />
             </ThemeProvider>
         )
