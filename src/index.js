@@ -22,32 +22,32 @@ const App = () => {
                     >
                             Default Theme
                     </button>
-                    <div style={{ background: useDarkTheme ? props.primaryColor : darkTheme.primaryColor,
-                        display: "flex",
-                        width: "100vw",
-                        height: "100vh",
-                        alignItems: "center",
-                        justifyContent: "space-around",
-                        flexWrap: "wrap"
-                    }}>
-                            <PrimaryButton modifiers="small">Primary button</PrimaryButton>
-                            <SecondaryButton modifiers={["large", "warning", "secondaryButtonWarning"]}>Secondary
-                                    button</SecondaryButton>
-                            <TertiaryButton>Ternary button</TertiaryButton>
-                            <br/>
-                            <PrimaryButton>Primary button</PrimaryButton>
-                            <SecondaryButton>Secondary button</SecondaryButton>
-                            <TertiaryButton>Ternary button</TertiaryButton>
-                            <br/>
-                            <PrimaryButton disabled>Primary button</PrimaryButton>
-                            <SecondaryButton disabled>Secondary button</SecondaryButton>
-                            <TertiaryButton disabled>Ternary button</TertiaryButton>
-                            <br/>
-                            <PrimaryButton modifiers="warning">Primary button</PrimaryButton>
-                            <PrimaryButton modifiers="warning">Primary button</PrimaryButton>
-                            <SecondaryButton modifiers={["large", "warning"]}>Secondary button</SecondaryButton>
-                            <TertiaryButton>Ternary button</TertiaryButton>
-                    </div>
+                    {/*<div style={{ background: useDarkTheme ? props.primaryColor : darkTheme.primaryColor,*/}
+                    {/*    display: "flex",*/}
+                    {/*    width: "100vw",*/}
+                    {/*    height: "100vh",*/}
+                    {/*    alignItems: "center",*/}
+                    {/*    justifyContent: "space-around",*/}
+                    {/*    flexWrap: "wrap"*/}
+                    {/*}}>*/}
+                            {/*<PrimaryButton modifiers="small">Primary button</PrimaryButton>*/}
+                            {/*<SecondaryButton modifiers={["large", "warning", "secondaryButtonWarning"]}>Secondary*/}
+                            {/*        button</SecondaryButton>*/}
+                            {/*<TertiaryButton>Ternary button</TertiaryButton>*/}
+                            {/*<br/>*/}
+                            {/*<PrimaryButton>Primary button</PrimaryButton>*/}
+                            {/*<SecondaryButton>Secondary button</SecondaryButton>*/}
+                            {/*<TertiaryButton>Ternary button</TertiaryButton>*/}
+                            {/*<br/>*/}
+                            {/*<PrimaryButton disabled>Primary button</PrimaryButton>*/}
+                            {/*<SecondaryButton disabled>Secondary button</SecondaryButton>*/}
+                            {/*<TertiaryButton disabled>Ternary button</TertiaryButton>*/}
+                            {/*<br/>*/}
+                            {/*<PrimaryButton modifiers="warning">Primary button</PrimaryButton>*/}
+                            {/*<PrimaryButton modifiers="warning">Primary button</PrimaryButton>*/}
+                            {/*<SecondaryButton modifiers={["large", "warning"]}>Secondary button</SecondaryButton>*/}
+                            {/*<TertiaryButton>Ternary button</TertiaryButton>*/}
+                    {/*</div>*/}
                         <SignUpModal />
                     <GlobalStyle />
             </ThemeProvider>

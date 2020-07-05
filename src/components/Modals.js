@@ -6,8 +6,8 @@ import { Illustrations, CloseIcon } from "../assets";
 import { PrimaryButton } from "./Buttons";
 
 const ModalWrapper = styled.div`
-  width: 800px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
   box-shadow: 0 5px 16px rgba(0,0,0, 0.2);
   background-color: ${props => props.theme.formElementBackground};
   color: ${props => props.theme.textOnFormElementBackground};
